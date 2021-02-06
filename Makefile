@@ -4,9 +4,9 @@
 SRC_DIR=src
 BIN_DIR=bin
 DOC_DIR=doc
-JAVAC=javac
+JAVAC=/usr/lib/jvm/java-11-openjdk/bin/javac
 JAVAC_FLAGS=
-JAVA=java
+JAVA=/usr/lib/jvm/java-11-openjdk/bin/java
 PYTHON=python
 
 # Targets
