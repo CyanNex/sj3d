@@ -4,9 +4,9 @@
 SRC_DIR=src
 BIN_DIR=bin
 DOC_DIR=doc
-JAVAC=javac
+JAVAC=/usr/lib/jvm/java-11-openjdk/bin/javac
 JAVAC_FLAGS=
-JAVA=java
+JAVA=/usr/lib/jvm/java-11-openjdk/bin/java
 PYTHON=python
 
 # Targets
@@ -36,7 +36,7 @@ demo: sj3d.jar demo/SJ3DDemo.class
 	$(JAVA) -cp .:sj3d.jar demo.SJ3DDemo
 
 sj3d.jar: $(BIN_DIR) sj3d
-	/usr/lib/jvm/java-16-jdk/bin/jar cf sj3d.jar -C $(BIN_DIR)/ sj3d
+	/usr/lib/jvm/java-11-openjdk/bin/jar cf sj3d.jar -C $(BIN_DIR)/ sj3d
 
 doc: $(SRC) generate-src
 	javadoc -sourcepath $(SRC_DIR) -protected -verbose -d $(DOC_DIR) -version -author sj3d

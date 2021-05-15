@@ -114,9 +114,9 @@ final class Renderer {
             // Calculate position on screen & depth from camera
             // This bit performs the transformation from orthographic to
             // perspective
-            v0.projZ = 1.0f / v.z;
-            v0.projX = v.x * fudgeScaling * v0.projZ + halfwidth;
-            v0.projY = v.y * fudgeScaling * v0.projZ + halfheight;
+            v0.projZ = 1.0f;
+            v0.projX = v.x * 30 * v0.projZ + halfwidth;
+            v0.projY = v.y * 30 * v0.projZ + halfheight;
 
         }
 
