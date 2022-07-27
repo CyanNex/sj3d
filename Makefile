@@ -4,10 +4,10 @@
 SRC_DIR=src
 BIN_DIR=bin
 DOC_DIR=doc
-JAVAC=/usr/lib/jvm/default/bin/javac
+JAVAC=$(JDK_HOME)/bin/javac
 JAVAC_FLAGS=
-JAVA=/usr/lib/jvm/default/bin/java
-JAR=/usr/lib/jvm/default/bin/jar
+JAVA=$(JDK_HOME)/bin/java
+JAR=$(JDK_HOME)/bin/jar
 PYTHON=python
 
 # Targets
